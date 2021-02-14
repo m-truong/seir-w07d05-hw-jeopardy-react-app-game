@@ -1,0 +1,170 @@
+body {
+  background: url("https://www.jeopardy.com/sites/default/files/social_meta/jeopardy_logo.jpg")
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* background-color: rgb(29, 29, 236); */
+  color: white;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h1 {
+  /* <h1> has margin-top of 4rem */
+  margin-top: 4rem;
+  text-shadow: 5px 5px 0px black;
+}
+
+.jeopardy-score-button-container {
+  /* vertical margin 100px and horizontal margin 60px */
+  margin: 100px 60px;
+  /* applies flex to container and affects all child-elements */
+  display: flex;
+  /* centers content horizontally */
+  justify-content: center;
+  /* centers content vertically */
+  align-items: center;
+  /* changes to column layout */
+  flex-direction: column;
+}
+
+.jeopardy-score-details {
+  /* this gives container fixed-width */
+  width: 25%;
+  position: fixed;
+  /* aligns container to the left */
+  text-align: left;
+  /* adjusts distance relative to top of 2rem */
+  top: 2rem;
+  /* adjusts diatance relative to left side of page of 1rem */
+  left: 1rem;
+  /* vertical-spacing */
+  line-height: 2rem;
+}
+
+.jeopardy-score-details span {
+  /* gives width properties and displays inline */
+  display: inline-block;
+  font-weight: 600;
+  /* pushes the elements to the right of <span> */
+  margin-right: 0.5rem;
+}
+
+.display-container {
+  line-height: auto;
+}
+
+.displayed-question {
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 4rem;
+  /* sets max-width of <div> container of question */
+  max-width: 800px;
+  /* offset-x offset-y blur-radius shadow-colour */
+  text-shadow: 5px 5px 0px black;
+}
+
+/* gives more spacing between answer and show answer button */
+.show-answer-btn {
+  margin-top: 3rem;
+}
+
+.shown-answer {
+  margin-top: 3rem;
+  font-weight: 200px;
+  font-size: 2rem;
+  text-shadow: 4px 4px 0px black;
+  -webkit-transition: all 0.3 ease-out;
+  transition: all 0.3 ease-out;
+}
+
+.displayed-question:hover,
+.shown-answer:hover {
+  color: gold;
+}
+
+button {
+  /* changes to pointer */
+  cursor: pointer;
+  /* uppercase */
+  text-transform: uppercase;
+  /* position: relative */
+  position: relative;
+  background-color: white;
+  color: blue;
+  display: inline-block;
+  /* line-height */
+  line-height: 35px;
+  /* gives horizontal padding 1rem */
+  padding: 0 1rem;
+  /* webkit-transition */
+  -webkit-transition: all 0.3 ease-out;
+  /* all-transitions duration  */
+  transition: all 0.3s ease-out;
+  /* rounded corners */
+  border-radius: 4px;
+}
+
+button:hover {
+  color: crimson;
+}
+
+.next {
+  border: 2px solid white;
+  /* changes next-button background-color */
+  background-color: blue;
+  /* font-color changed to white */
+  color: white;
+}
+
+.flex-container {
+  /* parent-container displays flex */
+  display: flex;
+  /* width */
+  width: 100%;
+  /* spaces out buttons */
+  justify-content: space-between;
+}
+
+.jeopardy-score-buttons {
+  /* fixed-scrolling */
+  position: fixed;
+  right: 1rem;
+  /* positioned 1rem from top of parent-container */
+  top: 1rem;
+  /* width is 30% of parent-container */
+  width: 30%;
+}
+
+.jeopardy-btn-increase {
+  background-color: limegreen;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+}
+
+.jeopardy-btn-decrease {
+  display: inline-block;
+  position: relative;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+/* more visible */
+.jeopardy-btn-decrease:hover {
+  color: blue;
+}
+
+.jeopardy-btn-reset {
+  display: inline-block;
+  position: relative;
+  background-color: purple;
+  color: white;
+  cursor: pointer;
+}
